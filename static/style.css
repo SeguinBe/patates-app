@@ -30,8 +30,7 @@
 }
 
 #sidebar li.active {
-    border:0 #eee solid;
-    border-right-width:5px;
+    border:1px #2666cc solid;
 }
 
 .content {
