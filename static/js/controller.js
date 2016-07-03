@@ -2,7 +2,7 @@
  * Created by benoit on 04/07/2016.
  */
 
-var patatesApp = angular.module('patatesApp', ['ui.bootstrap', 'ui.router']);
+var patatesApp = angular.module('patatesApp', ['ui.bootstrap', 'ui.router', "ngAnimate"]);
 
 patatesApp.config(function ($stateProvider, $urlRouterProvider) {
 
