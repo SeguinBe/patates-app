@@ -1,0 +1,48 @@
+
+#masthead {
+    min-height:180px;
+    background: url("img/bg1.jpg");
+    background-size: cover;
+    background-color: #2666cc;
+    margin-bottom: 40px;
+}
+
+#masthead h1 {
+    font-size: 30px;
+    line-height: 1;
+    padding-top:20px;
+    color: #FFF;
+    text-shadow: -5px 0 15px #000;
+}
+
+#masthead #logo {
+    margin-top:15%;
+}
+
+@media screen and (min-width: 768px) {
+    #masthead h1 {
+        font-size: 50px;
+    }
+}
+
+#sidebar li {
+    font-size: 20px;
+}
+
+#sidebar li.active {
+    border:0 #eee solid;
+    border-right-width:5px;
+}
+
+.content {
+    border:2px solid #23527c;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#footer {
+    text-align: center;
+    background-color: #2666cc;
+    margin-top: 20px;
+    color: #FFF;
+}
