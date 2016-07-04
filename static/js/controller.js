@@ -33,3 +33,11 @@ patatesApp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: "static/partials/buy.html"
         })
 });
+
+patatesApp.controller('baseController', function($scope, $http) {
+    $scope.prices = [];
+    $http.get("api/prices")
+    .then(function(response) {
+        $scope.prices = response.data;
+    });
+});

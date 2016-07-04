@@ -12,7 +12,14 @@
                     <th class="col-xs-2">Disponibilité</th>
                 </tr>
                 </thead>
-                <tbody id="price-table">
+                <tbody>
+                <tr ng-repeat="price in prices">
+                    <td>{{ price.type }}</td>
+                    <td>{{ price.size }}</td>
+                    <td>{{ price.price }} &euro;</td>
+                    <td ng-if="price.available"><span class="glyphicon glyphicon-ok" aria-hidden="true"/></td>
+                    <td ng-if="!price.available"><span class="glyphicon glyphicon-remove" aria-hidden="true"/></td>
+                </tr>
 
                 </tbody>
             </table>
