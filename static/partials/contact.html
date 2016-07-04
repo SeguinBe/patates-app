@@ -1,4 +1,20 @@
 <div class="content">
-    <h2>Contact</h2>
+    <h3>Où nous trouver?</h3>
+    <hr>
+    <p>
+        Edouard Seguin<br>
+        06 XX XX XX XX<br>
+        3, rue du Moulin<br>
+        39 410 Saint-Aubin<br>
+    </p>
+
+    <div map-lazy-load="https://maps.google.com/maps/api/js">
+      <ng-map center="47.0238843,5.3373743" zoom="16" scrollWheel="false">
+          <street-view-panorama container="streetview" pov="{pitch: 0, heading: 220}">
+          </street-view-panorama>
+      </ng-map>
+    </div>
+
+    <div id="streetview" style="height: 400px"></div>
 
 </div>

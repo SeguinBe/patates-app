@@ -1,4 +1,63 @@
 <div class="content">
-    <h2>BUY</h2>
+    <h1>Commande</h1>
+    <hr>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <p> Vous pouvez directement réserver ici : </p>
+            <div class="col-sm-12">
+                <div class="row form-group">
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Nom">
+                    </div>
+                    <div class="col-xs-6">
+                        <input type="text" class="form-control" id="familyName" name="familyName" placeholder="Prénom">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-xs-7">
+                        <input type="text" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="col-xs-5">
+                        <input type="text" class="form-control" name="phone" placeholder="Téléphone">
+                    </div>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Quantité</th>
+                        <th>Prix</th>
+                        <th>Nombre</th>
+                    </tr>
+                    </thead>
+                    <tbody id="order-table">
+                    </tbody>
+                </table>
+
+                <div class="col-xs-4 col-xs-offset-6">
+                    Prix total
+                </div>
+                <div class="col-xs-2">
+                    <p>
+                        <span id="computed-price">Truc</span>
+                    </p>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-xs-12">
+                        <textarea class="form-control" placeholder="Autres informations"></textarea>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-xs-10">
+                        <button class="btn btn-default pull-right">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div ></div>
+            </div>
+        </div>
+    </div>
 
 </div>

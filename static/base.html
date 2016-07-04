@@ -15,6 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-cookies.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
     <script src="static/js/ui-bootstrap.js"></script>
+    <script src="static/js/ng-map.min.js"></script>
 
     <script src="static/js/controller.js"></script>
 
@@ -22,51 +23,54 @@
 <body ng-app="patatesApp" ng-cloak>
 
 <div id="masthead">
-  <div class="container">
-      <div class="row">
-          <div class="col-sm-2 hidden-xs">
-            <div id="logo">
-                <img src="static/img/logo.jpg" class="img-responsive img-thumbnail">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 hidden-xs">
+                <div id="logo">
+                    <img src="static/img/logo.jpg" class="img-responsive img-thumbnail">
+                </div>
             </div>
-        </div>
-        <div class="col-sm-7">
-          <h1>Patates Seguin
-            <p class="lead">Saint-Aubin (39)</p>
-          </h1>
-        </div>
+            <div class="col-sm-7">
+                <h1>Patates Seguin
+                    <p class="lead">Saint-Aubin (39)</p>
+                </h1>
+            </div>
 
-      </div>
-  </div><!--/container-->
+        </div>
+    </div><!--/container-->
 </div><!--/masthead-->
 
 <!--main-->
 <div class="container">
-	<div class="row">
-      <!--left-->
-      <div class="col-md-3" id="leftCol">
-        <ul class="nav nav-stacked" id="sidebar">
-          <li ui-sref-active="active">
-              <a ui-sref="home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>  Accueil</a>
-          </li>
-          <li ui-sref-active="active">
-              <a ui-sref="about"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Qui sommes nous?</a>
-          </li>
-          <li ui-sref-active="active">
-              <a ui-sref="contact"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>  Contact</a>
-          </li>
-          <li ui-sref-active="active">
-              <a ui-sref="buy"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>  Commander!</a>
-          </li>
-        </ul>
-      </div><!--/left-->
+    <div class="row">
+        <!--left-->
+        <div class="col-md-3" id="leftCol">
+            <ul class="nav nav-stacked" id="sidebar">
+                <li ui-sref-active="active">
+                    <a ui-sref="home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>  Accueil</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="about"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>  Qui sommes nous?</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="contact"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>  Contact</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="prices"><span class="glyphicon glyphicon-eur" aria-hidden="true"></span>  Nos tarifs</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="buy"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>  Commander!</a>
+                </li>
+            </ul>
+        </div><!--/left-->
 
-      <!--right-->
-      <div class="col-md-9 ui-view-container" >
-        <div ui-view>
+        <!--right-->
+        <div class="col-md-9 ui-view-container" >
+            <div ui-view>
 
+            </div>
         </div>
-      </div>
-  	</div><!--/row-->
+    </div><!--/row-->
 </div><!--/container-->
 
 <!--<div id="footer">

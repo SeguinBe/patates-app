@@ -3,8 +3,8 @@
     min-height:180px;
     background: url("img/bg1.jpg");
     background-size: cover;
-    background-color: #2666cc;
-    margin-bottom: 40px;
+    background-color: #0a6f17;
+    margin-bottom: 25px;
 }
 
 #masthead h1 {
@@ -29,19 +29,24 @@
     font-size: 20px;
 }
 
+#sidebar a {
+    color: #0a6f17;
+}
+
 #sidebar li.active {
-    border:1px #2666cc solid;
+    border:1px #0a6f17 solid;
 }
 
 .content {
-    border:2px solid #23527c;
+    border:2px solid #0a6f17;
     border-radius: 20px;
     padding: 30px;
+    padding-top: 10px;
 }
 
 #footer {
     text-align: center;
-    background-color: #2666cc;
+    background-color: #0a6f17;
     margin-top: 20px;
     color: #FFF;
 }

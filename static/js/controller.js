@@ -2,7 +2,7 @@
  * Created by benoit on 04/07/2016.
  */
 
-var patatesApp = angular.module('patatesApp', ['ui.bootstrap', 'ui.router', "ngAnimate"]);
+var patatesApp = angular.module('patatesApp', ['ui.bootstrap', 'ui.router', "ngAnimate", 'ngMap']);
 
 patatesApp.config(function ($stateProvider, $urlRouterProvider) {
 
@@ -23,6 +23,10 @@ patatesApp.config(function ($stateProvider, $urlRouterProvider) {
         .state('contact', {
             url: "/contact",
             templateUrl: "static/partials/contact.html"
+        })
+        .state('prices', {
+            url: "/prices",
+            templateUrl: "static/partials/prices.html"
         })
         .state('buy', {
             url: "/buy",
