@@ -62,9 +62,9 @@ class PricesRessource(Resource):
 
 class BuyRessource(Resource):
     parser = reqparse.RequestParser()
-    parser.add_argument('email', type=str, help='Email of the buyer')
+    parser.add_argument('email', type=str, help='Email of the buyer', required=True)
     parser.add_argument('firstName', type=str, help='First name of the buyer')
-    parser.add_argument('familyName', type=str, help='Family name of the buyer')
+    parser.add_argument('lastName', type=str, help='Last name of the buyer')
     parser.add_argument('phone', type=str, help='Phone of the buyer')
     parser.add_argument('comments', type=str, help='')
 
@@ -74,7 +74,7 @@ class BuyRessource(Resource):
                     auth=('api', app.config['MAILGUN_API_KEY']),
                     data={'from': 'Patates Seguin <noreply@{}>'.format(app.config['MAILGUN_DOMAIN']),
                     'to': args['email'],
-                    'subject': 'Bonjour {} {}'.format(args['firstName'], args['familyName']),
+                    'subject': 'Bonjour {} {}'.format(args['firstName'], args['lastName']),
                     'text': 'Ceci est un email de test'})
         if r.status_code != 200:
             abort(500, msg="Impossible to send email")
