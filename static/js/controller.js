@@ -40,4 +40,24 @@ patatesApp.controller('baseController', function($scope, $http) {
     .then(function(response) {
         $scope.prices = response.data;
     });
+
+    $scope.order = {
+        email: "",
+        firstName: "",
+        lastName: "",
+        phone: "",
+        comments: ""
+    };
+
+    $scope.orderMessage = "";
+
+    $scope.clickBuy = function() {
+        $http.post("api/buy", $scope.order)
+            .then(function(response) {
+                $scope.orderMessage = "Sent email to : "+$scope.order.email;
+            }, function(response) {
+                $scope.orderMessage = "Unable to send email to given address";
+            });
+
+    }
 });

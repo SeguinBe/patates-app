@@ -7,18 +7,18 @@
             <div class="col-sm-12">
                 <div class="row form-group">
                     <div class="col-xs-6">
-                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Nom">
+                        <input type="text" class="form-control" ng-model="order.lastName" placeholder="Nom">
                     </div>
                     <div class="col-xs-6">
-                        <input type="text" class="form-control" id="familyName" name="familyName" placeholder="Prénom">
+                        <input type="text" class="form-control" ng-model="order.firstName" placeholder="Prénom">
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col-xs-7">
-                        <input type="text" class="form-control" name="email" placeholder="Email">
+                        <input type="email" class="form-control" ng-model="order.email" placeholder="Email">
                     </div>
                     <div class="col-xs-5">
-                        <input type="text" class="form-control" name="phone" placeholder="Téléphone">
+                        <input type="text" class="form-control" ng-model="order.phone" placeholder="Téléphone">
                     </div>
                 </div>
                 <table class="table table-striped">
@@ -50,12 +50,17 @@
 
                 <div class="row form-group">
                     <div class="col-xs-12">
-                        <textarea class="form-control" placeholder="Autres informations"></textarea>
+                        <textarea class="form-control" ng-model="order.comments" placeholder="Autres informations"></textarea>
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col-xs-10">
-                        <button class="btn btn-default pull-right">Commander</button>
+                        <button class="btn btn-default pull-right" ng-click="clickBuy()">Commander</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10">
+                        <p>{{ orderMessage }}</p>
                     </div>
                 </div>
             </div>
