@@ -54,9 +54,9 @@ patatesApp.controller('baseController', function($scope, $http) {
     $scope.clickBuy = function() {
         $http.post("api/buy", $scope.order)
             .then(function(response) {
-                $scope.orderMessage = "Sent email to : "+$scope.order.email;
+                $scope.orderMessage = "Email envoyé à : "+$scope.order.email;
             }, function(response) {
-                $scope.orderMessage = "Unable to send email to given address";
+                $scope.orderMessage = "La requête a échoué :-(";
             });
 
     }
