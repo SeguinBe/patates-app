@@ -34,7 +34,7 @@ class Price(db.Model):
                                                                        self.price,
                                                                        self.available)
 
-db.create_all()
+#db.create_all()
 
 
 @app.route('/')
