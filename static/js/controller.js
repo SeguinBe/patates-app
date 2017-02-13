@@ -42,6 +42,19 @@ patatesApp.config(function ($stateProvider, $urlRouterProvider) {
         })
 });
 
+patatesApp.service('Analytics', function() {
+  this.recordPageview = function(url) {
+    ga('set', 'page', url);
+    ga('send', 'pageview');
+  };
+});
+
+patatesApp.run(function($rootScope, $location, Analytics) {
+  $rootScope.$on('$stateChangeSuccess', function() {
+    Analytics.recordPageview($location.url());
+  });
+});
+
 patatesApp.controller('baseController', function($scope, $http) {
     $scope.prices = [];
     /*$http.get("api/prices")
