@@ -1,24 +1,44 @@
 <div class="content">
     <h1>Nos tarifs</h1>
     <hr>
+    Un petit tableau pour vous y retrouver…
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-sm-10 col-sm-offset-1">
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th>Type</th>
-                    <th>Quantité</th>
-                    <th>Prix</th>
-                    <th class="col-xs-2">Disponibilité</th>
+                    <th></th>
+                    <th>Utilisation en cuisine</th>
+                    <th>Période de vente</th>
+                    <th>Sac de 10Kg</th>
+                    <th>Sac de 20Kg</th>
+                    <th>Sac de 25Kg</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="price in prices">
-                    <td>{{ price.type }}</td>
-                    <td>{{ price.size }}</td>
-                    <td>{{ price.price }} &euro;</td>
-                    <td ng-if="price.available"><span class="glyphicon glyphicon-ok" aria-hidden="true"/></td>
-                    <td ng-if="!price.available"><span class="glyphicon glyphicon-remove" aria-hidden="true"/></td>
+                <tr>
+                    <td>Agata (Jaune)</td>
+                    <td>Chair tendre polyvalente</td>
+                    <td>Août</td>
+                    <td>5 &euro;</td>
+                    <td><span class="glyphicon glyphicon-remove" aria-hidden="true"/></td>
+                    <td>10 &euro;</td>
+                </tr>
+                <tr>
+                    <td>Allians (Jaune)</td>
+                    <td>Chair ferme polyvalente</td>
+                    <td>Septembre-Décembre</td>
+                    <td>5 &euro;</td>
+                    <td><span class="glyphicon glyphicon-remove" aria-hidden="true"/></td>
+                    <td>10 &euro;</td>
+                </tr>
+                <tr>
+                    <td>Chérie (Rose)</td>
+                    <td>Vapeur, salades, raclette…</td>
+                    <td>Août-Septembre</td>
+                    <td>6 &euro;</td>
+                    <td>10 &euro;</td>
+                    <td><span class="glyphicon glyphicon-remove" aria-hidden="true"/></td>
                 </tr>
 
                 </tbody>

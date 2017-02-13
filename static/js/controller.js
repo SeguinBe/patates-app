@@ -28,6 +28,14 @@ patatesApp.config(function ($stateProvider, $urlRouterProvider) {
             url: "/prices",
             templateUrl: "static/partials/prices.html"
         })
+        .state('culture', {
+            url: "/culture",
+            templateUrl: "static/partials/culture.html"
+        })
+        .state('variety', {
+            url: "/variety",
+            templateUrl: "static/partials/variety.html"
+        })
         .state('buy', {
             url: "/buy",
             templateUrl: "static/partials/buy.html"
@@ -36,10 +44,10 @@ patatesApp.config(function ($stateProvider, $urlRouterProvider) {
 
 patatesApp.controller('baseController', function($scope, $http) {
     $scope.prices = [];
-    $http.get("api/prices")
+    /*$http.get("api/prices")
     .then(function(response) {
         $scope.prices = response.data;
-    });
+    });*/
 
     $scope.order = {
         email: "",
