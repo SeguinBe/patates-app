@@ -1,15 +1,15 @@
 from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
-from sqlalchemy.dialects.postgresql import JSON
-from flask.ext.restful import Resource, fields, marshal, Api, reqparse, abort
-import requests
-import os
+#from flask.ext.sqlalchemy import SQLAlchemy
+#from sqlalchemy.dialects.postgresql import JSON
+#from flask.ext.restful import Resource, fields, marshal, Api, reqparse, abort
+#import requests
+#import os
 app = Flask(__name__)
 #app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 #app.config['MAILGUN_DOMAIN'] = os.environ['MAILGUN_DOMAIN']
 #app.config['MAILGUN_API_KEY'] = os.environ['MAILGUN_API_KEY']
 #db = SQLAlchemy(app)
-api = Api(app)
+#api = Api(app)
 
 
 # class Price(db.Model):

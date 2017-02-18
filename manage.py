@@ -1,3 +1,3 @@
-from app import db
+#from app import db
 
-db.metadata.create_all()
+#db.metadata.create_all()
